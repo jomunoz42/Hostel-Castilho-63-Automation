@@ -180,10 +180,16 @@ The automation fills the table in the correct format and ensures that the final 
 If the table is completed successfully, the code list is printed automatically.
 
 
-<p align="center">
-    <img src="images/code-table-empty.png" width="45%">
-    <img src="images/code-table-completed.jpg" width="45%">
-</p>
+<table>
+<tr>
+<td align="center"><strong>Generated Code List</strong></td>
+<td align="center"><strong>Printed Operational Document</strong></td>
+</tr>
+<tr>
+<td><img src="images/code-table-empty.png" width="100%"></td>
+<td><img src="images/code-table-completed.jpg" width="100%"></td>
+</tr>
+</table>
 
 ---
 
