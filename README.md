@@ -20,8 +20,11 @@ The system is currently used internally and was designed with a practical goal: 
 
 Below is the access-code automation in action — one of the highest-impact parts of the pipeline.
 
-
 <img src="gifs/code_generation.gif" width="100%"/>
+
+<img src="gifs/VCF_to_myself.gif" width="100%"/>
+
+<img src="gifs/terminal_output" width="100%"/>
 
 ---
 
@@ -37,16 +40,6 @@ to approximately:
 - **8 minutes of automated execution**
 
 While improving reliability and reducing manual errors.
-
----
-
-## 🧠 Why This Project Matters
-
-This was not a school project or tutorial.
-
-It was built because there was a real operational need inside a working business. The project required understanding deeply the hostel workflow, identifying bottlenecks, designing a reliable automation process, and improving it incrementally as real-world issues appeared.
-
-The main focus was not overengineering, but building something that works consistently in daily usage.
 
 ---
 
@@ -76,14 +69,6 @@ manager.py
 The project follows a simple principle:
 
 > The Excel files are the source of truth.
-
----
-
-## 🔐 Credentials and Safety
-
-Credentials are stored in the computer environment variables instead of being hardcoded in the source code.
-
-Before starting the automation, the system verifies that the required credentials exist. This avoids running an incomplete process and helps prevent crashes caused by missing configuration.
 
 ---
 
@@ -309,6 +294,14 @@ This project strengthened my understanding of:
 - Incremental software improvement
 
 Most importantly, it showed me how software can directly solve operational problems and create measurable value in a real environment.
+
+---
+
+## 🔐 Credentials and Safety
+
+Credentials are stored in the computer environment variables instead of being hardcoded in the source code.
+
+Before starting the automation, the system verifies that the required credentials exist. This avoids running an incomplete process and helps prevent crashes caused by missing configuration.
 
 ---
 
