@@ -181,8 +181,8 @@ If the table is completed successfully, the code list is printed automatically.
 
 
 <p align="center">
-    <img src="images/code-list-template.jpg" width="48%">
-    <img src="images/code-list-printed.jpg" width="48%">
+    <img src="images/code-table-empty.png" width="48%">
+    <img src="images/code-table-completed.jpg" width="48%">
 </p>
 
 ---
