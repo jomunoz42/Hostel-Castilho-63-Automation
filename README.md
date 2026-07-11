@@ -22,7 +22,15 @@ Below is the access-code automation in action — one of the highest-impact part
 
 <img src="gifs/code_generation.gif" width="100%"/>
 
+### VCF Contact Delivery
+
+Automated contact generation and delivery as part of the guest communication workflow.
+
 <img src="gifs/VCF_to_myself.gif" width="100%"/>
+
+### Complete Pipeline Execution
+
+The full automation pipeline running from reservation export to final cleanup.
 
 <img src="gifs/terminal_output.gif" width="100%"/>
 
@@ -43,7 +51,7 @@ While improving reliability and reducing manual errors.
 
 ---
 
-## 🏗 General Architecture
+## 🏛️ General Architecture
 
 The pipeline is controlled by a central orchestrator:
 
@@ -72,7 +80,7 @@ The project follows a simple principle:
 
 ---
 
-## 🔄 Full Automation Flow
+## 🔗 Full Automation Flow
 
 ### 1. PMS Login and Reservation Export
 
@@ -204,22 +212,6 @@ To reduce the risk of being blocked or flagged by WhatsApp, messages are sent wi
 
 ---
 
-## 🧹 Cleanup and Debugging Strategy
-
-At the end of the execution, the automation deletes temporary files that are no longer needed.
-
-However, it intentionally keeps some generated files when useful, especially the code list.
-
-If an error occurs in a specific section, the corresponding file is not deleted. This allows the valid part of the generated data to still be used manually and also helps with debugging.
-
-The goal is:
-
-> Avoid total failure whenever partial recovery is possible.
-
-This approach was important because the project is used in a real operational environment where the work still needs to be completed even if one part of the automation fails.
-
----
-
 ## 🛠 Technologies Used
 
 - Python
@@ -252,16 +244,6 @@ The automation handles:
 
 ---
 
-### Error Handling and Recovery
-
-The automation is designed to continue whenever possible.
-
-Instead of crashing immediately, it uses logging and localized error handling so that one failed guest code or one failed section does not necessarily destroy the whole workflow.
-
-This was especially important for access code generation, where each guest is processed individually.
-
----
-
 ### Real-World Workflow Design
 
 A major challenge was not only writing code, but understanding the actual hostel workflow well enough to automate it correctly.
@@ -278,40 +260,29 @@ The system had to match the way the team works, including:
 
 ---
 
-## 📚 What I Learned
+## 🛡️ Reliability and Recovery Strategy
 
-This project strengthened my understanding of:
+The automation is designed to continue whenever partial recovery is possible instead of terminating the entire workflow after a localized failure.
 
-- Automation design
-- Python scripting
-- Browser automation with Selenium
-- Excel processing with openpyxl
-- File generation and cleanup
-- Operational reliability
-- Debugging real-world systems
-- Error handling and recovery
-- Workflow analysis
-- Incremental software improvement
+Logging and localized error handling isolate failures so that one failed section or individual guest operation does not necessarily prevent the remaining workflow from completing. This is especially important during access code generation, where guests are processed individually.
 
-Most importantly, it showed me how software can directly solve operational problems and create measurable value in a real environment.
+At the end of execution, temporary files that are no longer needed are removed safely. However, useful generated files, especially the code list, are intentionally preserved when their corresponding stage fails.
 
----
+This allows valid intermediate results to remain available for manual use, supports debugging, and ensures that operational work can still be completed when part of the automation fails.
 
-## 🔐 Credentials and Safety
+> Avoid total failure whenever partial recovery is possible.
 
-Credentials are stored in the computer environment variables instead of being hardcoded in the source code.
+This approach is essential because the project operates in a real business environment where the underlying work still needs to be completed even when one part of the automation encounters an error.
 
-Before starting the automation, the system verifies that the required credentials exist. This avoids running an incomplete process and helps prevent crashes caused by missing configuration.
 
----
+## 🔒 Repository and Security Note
 
-## 🔒 Repository Note
+Credentials are stored in environment variables instead of being hardcoded in the source code. Before execution, the system verifies that all required credentials are available, preventing incomplete runs caused by missing configuration.
 
-This repository does not contain the full private production source code.
+This repository does not contain the full private production source code. The project is used internally in a real business environment, and the complete implementation includes operational details, workflows, integrations, and other production-specific information that are not appropriate to publish publicly.
 
-The project is currently used internally in a real business environment, and the full implementation includes operational details, credentials, workflows, and integrations that are not appropriate to publish publicly.
+This repository exists as a technical overview and portfolio presentation of the project's architecture, workflow, engineering decisions, and operational impact.
 
-This repository exists as a technical overview and portfolio presentation of the project architecture, workflow, and impact.
 
 ---
 
