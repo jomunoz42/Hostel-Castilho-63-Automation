@@ -22,17 +22,17 @@ Below is the access-code automation in action — one of the highest-impact part
 
 <img src="gifs/code_generation.gif" width="100%"/>
 
-<p align="center">
-    <strong>VCF Contact Generation and Delivery</strong>
-</p>
+<br>
+
+<h3>VCF Contact Generation and Delivery</h3>
 
 Automated contact generation and delivery as part of the guest communication workflow.
 
 <img src="gifs/VCF_to_myself.gif" width="100%"/>
 
-<p align="center">
-    <strong>Complete Pipeline Execution Output</strong>
-</p>
+<br>
+
+<h3>Complete Pipeline Execution Output</h3>
 
 The CLI output of the full automation pipeline running from reservation export to final cleanup.
 
@@ -165,29 +165,53 @@ Each code creation is wrapped in error handling so that if one code fails, the a
 
 After the access codes are created, the automation generates a final `code.xlsx` file with the following structure:
 
-| Column | Data |
-|---|---|
-| A | Guest Name |
-| B | Room |
-| C | Number of Nights |
-| D | Room Code |
-| E | Street Code |
+<table>
+<tr>
+
+<td width="45%" valign="top">
+
+<table>
+<tr><th>Column</th><th>Data</th></tr>
+<tr><td>A</td><td>Guest Name</td></tr>
+<tr><td>B</td><td>Room</td></tr>
+<tr><td>C</td><td>Number of Nights</td></tr>
+<tr><td>D</td><td>Room Code</td></tr>
+<tr><td>E</td><td>Street Code</td></tr>
+</table>
+
+</td>
+
+<td width="55%" valign="middle">
 
 This information is then inserted into a pre-existing Word document template.
 
+<br><br>
+
 The automation fills the table in the correct format and ensures that the final document is ready to be printed and used by the team.
+
+</td>
+
+</tr>
+</table>
+
+<br>
 
 If the table is completed successfully, the code list is printed automatically.
 
+<br>
 
 <table>
 <tr>
-<td align="center"><strong>Generated Code List</strong></td>
-<td align="center"><strong>Printed Operational Document</strong></td>
+<td width="50%" align="center"><strong>Generated Template</strong></td>
+<td width="50%" align="center"><strong>Final Printed Operational Document</strong></td>
 </tr>
 <tr>
-<td><img src="images/code-table-empty.png" width="100%"></td>
-<td><img src="images/code-table-completed.jpg" width="100%"></td>
+<td width="50%" align="center">
+    <img src="images/code-table-empty.png" width="92%">
+</td>
+<td width="50%" align="center">
+    <img src="images/code-table-completed.jpg" width="100%">
+</td>
 </tr>
 </table>
 
@@ -219,51 +243,39 @@ To reduce the risk of being blocked or flagged by WhatsApp, messages are sent wi
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Technologies and Integrations
 
-- Python
-- Selenium
-- openpyxl
-- WhatsApp Web automation
-- VCF contact generation
-- Excel file processing
-- Word document automation
-- Environment variables
-- Logging
-- Browser automation
-- File cleanup utilities
+| Core Technologies        | Integrations & Automation            |
+| ------------------------ | ------------------------------------ |
+| Python                   | Ynnov PMS                            |
+| Selenium                 | TTLock                               |
+| openpyxl                 | WhatsApp Web                         |
+| Excel / XLSX processing  | VCF contact generation               |
+| Word document automation | Windows printing and file operations |
+
 
 ---
 
-### Excel Parsing and Data Cleaning
+### Excel Processing and Data Transformation
 
-Reservation exports contain data that needs to be cleaned, filtered, converted, and reorganized.
+Reservation exports require cleaning, filtering, conversion, and restructuring before they can be used by the different automation stages.
 
-The automation handles:
+The pipeline handles `.xls` to `.xlsx` conversion, workflow-specific file duplication, keyword-based row filtering, guest selection and grouping, and the generation of structured operational outputs.
 
-- `.xls` to `.xlsx` conversion
-- Duplicated files for different workflows
-- Row deletion based on keywords
-- Stale row issues after deletion
-- Guest filtering
-- Reservation grouping
-- Formatted operational outputs
+Because Excel files act as the source of truth between automation stages, data integrity and consistent transformations are essential to the reliability of the entire pipeline.
 
 ---
 
 ### Real-World Workflow Design
 
-A major challenge was not only writing code, but understanding the actual hostel workflow well enough to automate it correctly.
+Building an automation that works once is relatively straightforward. The real challenge was making HC63 reliable enough to be trusted as part of the daily operational workflow.
 
-The system had to match the way the team works, including:
+Achieving consistent execution required continuous improvement of browser interactions, failure isolation, logging, recovery behavior, and cleanup logic as the system encountered real-world conditions.
 
-- Printed documents
-- Existing templates
-- WhatsApp habits
-- PMS exports
-- Access code systems
-- Remote check-in workflow
-- Manual fallback needs
+The system also had to integrate with the existing hostel workflow without forcing the team to change how daily work was performed. It was designed around existing PMS exports, document templates, printing requirements, WhatsApp workflows, access-code systems, and manual fallback procedures.
+
+This constraint strongly influenced the architecture: HC63 automates the repetitive work while preserving the tools, outputs, and recovery paths already used by the team.
+
 
 ---
 
