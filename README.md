@@ -22,7 +22,7 @@ Below is the access-code automation in action — one of the highest-impact part
 
 <br>
 
-<h3>VCF Contact Generation and Delivery</h3>
+## VCF Contact Generation and Delivery
 
 Automated contact generation and delivery as part of the guest communication workflow.
 
@@ -30,7 +30,7 @@ Automated contact generation and delivery as part of the guest communication wor
 
 <br>
 
-<h3>Complete Pipeline Execution Output</h3>
+## Complete Pipeline Execution Output
 
 The CLI output of the full automation pipeline running from reservation export to final cleanup.
 
@@ -71,7 +71,9 @@ The pipeline is coordinated by a central orchestrator, manager.py, which manages
 
 ---
 
-### 🔗 Full Automation Flow
+# <h1 align="center">🔗 Full Automation Flow</h1>
+
+<br>
 
 ## 📥 Reservation Platform Login and Data Export
 
@@ -100,9 +102,18 @@ The script also parses and cleans invalid entries, removing guests who should no
 
 After the list is generated, it is printed automatically.
 
-<p align="center">
-    <img src="images/breakfast-list.jpg" width="75%">
-</p>
+<table align="center" width="25%">
+<tr>
+<td align="center">
+    <strong>Breakfast List</strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+    <img src="images/breakfast-list.jpg" width="100%">
+</td>
+</tr>
+</table>
 
 ---
 
