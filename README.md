@@ -12,11 +12,9 @@
 
 I have built a Python automation pipeline to streamline daily hostel operations at **Castilho Hostel & Suites 63**.
 
-This project was developed to solve real operational problems in a live hospitality environment, automating repetitive workflows related to reservations, breakfast lists, city tax processing, door code generation, Word document creation, VCF contact generation, and WhatsApp guest communication.
+This project automates the workflow from raw reservation exports to breakfast and city tax processing, access-code generation, printed operational documents, VCF contact generation, and WhatsApp guest communication.
 
-This pipeline automates the full process from raw reservation exports to printed operational documents and guest communication.
-
-The system is currently used internally and was designed with a practical goal: reduce manual workload, avoid human errors, and make daily operations way faster and more reliable.
+The system is used internally and was designed to reduce manual workload and human error while making daily operations faster and more reliable.
 
 Below is the access-code automation in action — one of the highest-impact parts of the pipeline.
 
@@ -51,19 +49,11 @@ to approximately:
 
 - **8 minutes of automated execution**
 
-While improving reliability and reducing manual errors.
-
 ---
 
 ## 🏛️ General Architecture
 
-The pipeline is controlled by a central orchestrator:
-
-```text
-manager.py
-```
-
-`manager.py` is responsible for coordinating the full workflow, including:
+The pipeline is coordinated by a central orchestrator, manager.py, which manages the full workflow:
 
 - Creating the daily log file if it does not exist
 - Checking required environment credentials
@@ -79,15 +69,11 @@ manager.py
 - Cleaning temporary files safely
 - Committing and pushing the daily execution log to a dedicated repository for centralized execution history
 
-The project follows a simple principle:
-
-> The Excel files are the source of truth.
-
 ---
 
-## 🔗 Full Automation Flow
+### 🔗 Full Automation Flow
 
-### 1. PMS Login and Reservation Export
+## 📥 Reservation Platform Login and Data Export
 
 The automation logs into **Ynnov**, the PMS used to manage reservations.
 
@@ -100,9 +86,9 @@ These files are then converted to `.xlsx` and duplicated depending on the operat
 
 ---
 
-### 2. Breakfast List Generation
+## 🥐 Breakfast List Generation
 
-From the reservation export, the automation creates a breakfast list containing:
+The automation creates a breakfast list containing:
 
 - Guest names
 - Number of adults
@@ -120,7 +106,7 @@ After the list is generated, it is printed automatically.
 
 ---
 
-### 3. City Tax List Generation
+## 💶 City Tax List Generation
 
 The tax list is generated from reservation data and contains:
 
@@ -129,8 +115,6 @@ The tax list is generated from reservation data and contains:
 - Tax values to be paid
 - Booking reservation ID
 - Property associated with the reservation
-
-The final result is prepared in a format suitable for operational usage and tracking.
 
 <img src="images/tax-list.png" width="100%"/>
 
@@ -155,7 +139,7 @@ After that, it processes each reservation individually and creates a specific **
 - The correct room
 - The correct guest assignment
 
-This is one of the most important parts of the system because creating a single guest code manually requires around **50 clicks and/or key presses**.
+Creating a single guest code manually requires around 50 clicks and/or key presses.
 
 Each code creation is wrapped in error handling so that if one code fails, the automation logs the problem and continues instead of crashing the entire pipeline.
 
@@ -163,7 +147,7 @@ Each code creation is wrapped in error handling so that if one code fails, the a
 
 ## 📄 Code List Generation
 
-After the access codes are created, the automation generates a final `code.xlsx` file with the following structure:
+The automation generates a final code.xlsx file:
 
 <table>
 <tr>
@@ -219,9 +203,7 @@ If the table is completed successfully, the code list is printed automatically.
 
 ## 📱 WhatsApp and VCF Contact Automation
 
-The pipeline also automates part of the remote check-in process for a separate property.
-
-From another copy of the reservation file, the automation extracts the guests associated with the remote property and formats:
+For a separate remote-check-in property, the automation extracts the guests associated with the remote property and formats:
 
 - Names
 - Phone numbers
@@ -236,7 +218,6 @@ This allows multiple guest contacts to be created almost instantly instead of ma
 After that, the automation uses WhatsApp Web links to send the first remote check-in message to each guest.
 
 To reduce the risk of being blocked or flagged by WhatsApp, messages are sent with a randomized delay between **8 and 10 seconds**.
-
 
 <!-- WhatsApp messages sent -->
 <img src="images/whatsapp-messages.png" width="100%"/>
@@ -256,7 +237,7 @@ To reduce the risk of being blocked or flagged by WhatsApp, messages are sent wi
 
 ---
 
-### Excel Processing and Data Transformation
+## 📊 Excel Processing and Data Transformation
 
 Reservation exports require cleaning, filtering, conversion, and restructuring before they can be used by the different automation stages.
 
@@ -266,7 +247,7 @@ Because Excel files act as the source of truth between automation stages, data i
 
 ---
 
-### Real-World Workflow Design
+## 🌐 Real-World Workflow Design
 
 Building an automation that works once is relatively straightforward. The real challenge was making HC63 reliable enough to be trusted as part of the daily operational workflow.
 
