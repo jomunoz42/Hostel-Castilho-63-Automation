@@ -73,8 +73,6 @@ The pipeline is coordinated by a central orchestrator, manager.py, which manages
 
 # <h1 align="center">🔗 Full Automation Flow</h1>
 
-<br>
-
 ## 📥 Reservation Platform Login and Data Export
 
 The automation logs into **Ynnov**, the PMS used to manage reservations.
@@ -127,7 +125,11 @@ The tax list is generated from reservation data and contains:
 - Booking reservation ID
 - Property associated with the reservation
 
-<img src="images/tax-list.png" width="100%"/>
+<p align="center">
+    <strong>City Tax List</strong>
+</p>
+
+<img src="images/tax-list.png" width="100%">
 
 ---
 
