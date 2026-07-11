@@ -22,15 +22,19 @@ Below is the access-code automation in action — one of the highest-impact part
 
 <img src="gifs/code_generation.gif" width="100%"/>
 
-### VCF Contact Delivery
+<p align="center">
+    <strong>VCF Contact Generation and Delivery</strong>
+</p>
 
 Automated contact generation and delivery as part of the guest communication workflow.
 
 <img src="gifs/VCF_to_myself.gif" width="100%"/>
 
-### Complete Pipeline Execution
+<p align="center">
+    <strong>Complete Pipeline Execution Output</strong>
+</p>
 
-The full automation pipeline running from reservation export to final cleanup.
+The CLI output of the full automation pipeline running from reservation export to final cleanup.
 
 <img src="gifs/terminal_output.gif" width="100%"/>
 
@@ -73,6 +77,7 @@ manager.py
 - Creating and sending the VCF contact file
 - Parsing guest contacts and sending WhatsApp messages
 - Cleaning temporary files safely
+- Committing and pushing the daily execution log to a dedicated repository for centralized execution history
 
 The project follows a simple principle:
 
@@ -176,13 +181,9 @@ If the table is completed successfully, the code list is printed automatically.
 
 
 <p align="center">
-    <img src="images/code-table-empty.png" width="75%"/>
+    <img src="images/code-list-template.jpg" width="48%">
+    <img src="images/code-list-printed.jpg" width="48%">
 </p>
-
-<p align="center">
-    <img src="images/code-table-completed.jpg" width="75%"/>
-</p>
-
 
 ---
 
