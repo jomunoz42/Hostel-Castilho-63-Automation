@@ -24,7 +24,7 @@ Below is the access-code automation in action — one of the highest-impact part
 
 <img src="gifs/VCF_to_myself.gif" width="100%"/>
 
-<img src="gifs/terminal_output" width="100%"/>
+<img src="gifs/terminal_output.gif" width="100%"/>
 
 ---
 
