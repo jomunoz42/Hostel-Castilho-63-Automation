@@ -51,6 +51,22 @@ to approximately:
 
 ---
 
+<!-- HC63_METRICS_START -->
+
+## 📈 Value Created
+
+🥐 **— Breakfast Lists Generated**  
+💶 **— City Tax Lists Processed**  
+🔑 **— Guest Access Codes Generated**  
+📇 **— VCF Contact Files Created**  
+💬 **— WhatsApp Messages Sent***  (discontinued)
+
+⏱️ **~— Hours of Manual Work Saved**
+
+<sub>Statistics last updated: —</sub>
+
+<!-- HC63_METRICS_END -->
+
 ## 🏛️ General Architecture
 
 The pipeline is coordinated by a central orchestrator, manager.py, which manages the full workflow:
