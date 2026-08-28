@@ -55,15 +55,16 @@ to approximately:
 
 ## 📈 Value Created
 
-🥐 **106 Breakfast Lists Generated**  
-💶 **104 City Tax Lists Processed**  
-🔑 **3843 Guest Access Codes Generated**  
-📇 **87 VCF Contact Files Created**  
-💬 **94 WhatsApp Messages Sent***  (discontinued)
+🥐&nbsp;&nbsp;&nbsp;**108&nbsp;&nbsp;Breakfast Lists Generated**  
+💶&nbsp;&nbsp;&nbsp;**106&nbsp;&nbsp;City Tax Lists Processed**  
+🔑&nbsp;&nbsp;&nbsp;**3928&nbsp;Guest Access Codes Generated**  
+📇&nbsp;&nbsp;&nbsp;**89&nbsp;&nbsp;&nbsp;VCF Contact Files Created**  
+💬&nbsp;&nbsp;&nbsp;**94&nbsp;&nbsp;&nbsp;WhatsApp Messages Sent (discontinued)**  
 
-⏱️ **~257 Hours of Manual Work Saved**
+⏱️&nbsp;&nbsp;**~261&nbsp;Hours of Manual Work Saved**
 
-<sub>Statistics last updated: 2026-08-26</sub>
+<sub>Statistics last updated: 2026-08-28</sub>  
+<sub>All statistics are derived from real execution logs, which are kept private and can be verified.</sub>
 
 <!-- HC63_METRICS_END -->
 
