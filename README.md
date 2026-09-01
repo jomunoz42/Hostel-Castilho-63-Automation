@@ -53,18 +53,42 @@ to approximately:
 
 <!-- HC63_METRICS_START -->
 
-## 📈 Value Created
+<h2>📈 Value Created</h2>
 
-🥐&nbsp;&nbsp;&nbsp;**&nbsp;112&nbsp;&nbsp;Breakfast Lists Generated**  
-💶&nbsp;&nbsp;&nbsp;**&nbsp;110&nbsp;&nbsp;City Tax Lists Processed**  
-🔑&nbsp;&nbsp;&nbsp;**4094&nbsp;&nbsp;Guest Access Codes Generated**  
-📇&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;93&nbsp;&nbsp;VCF Contact Files Created**  
-💬&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;94&nbsp;&nbsp;WhatsApp Messages Sent (discontinued)**  
+<table>
+  <tr>
+    <td>🥐</td>
+    <td align="right"><strong>112</strong></td>
+    <td><strong>Breakfast Lists Generated</strong></td>
+  </tr>
+  <tr>
+    <td>💶</td>
+    <td align="right"><strong>110</strong></td>
+    <td><strong>City Tax Lists Processed</strong></td>
+  </tr>
+  <tr>
+    <td>🔑</td>
+    <td align="right"><strong>4094</strong></td>
+    <td><strong>Guest Access Codes Generated</strong></td>
+  </tr>
+  <tr>
+    <td>📇</td>
+    <td align="right"><strong>93</strong></td>
+    <td><strong>VCF Contact Files Created</strong></td>
+  </tr>
+  <tr>
+    <td>💬</td>
+    <td align="right"><strong>94</strong></td>
+    <td><strong>WhatsApp Messages Sent (discontinued)</strong></td>
+  </tr>
+</table>
+<br>
 
-⏱️&nbsp;&nbsp;**~271&nbsp;&nbsp;Hours of Manual Work Saved**
+⏱️ &nbsp; **~271 &nbsp; Hours of Manual Work Saved**
+<br>
 
-<sub>Statistics last updated: 2026-09-01</sub>  
-<sub>All statistics are derived from real execution logs, which are kept private and can be verified.</sub>
+<sub>Statistics tracked since: <strong>2026-03-03</strong> · Last updated: <strong>2026-09-01</strong></sub><br>
+<sub><strong>All statistics are derived from real execution logs, which are kept private and can be verified.</strong></sub>
 
 <!-- HC63_METRICS_END -->
 
