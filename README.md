@@ -58,22 +58,22 @@ to approximately:
 <table>
   <tr>
     <td>🥐</td>
-    <td align="right"><strong>112</strong></td>
+    <td align="right"><strong>117</strong></td>
     <td><strong>Breakfast Lists Generated</strong></td>
   </tr>
   <tr>
     <td>💶</td>
-    <td align="right"><strong>110</strong></td>
+    <td align="right"><strong>115</strong></td>
     <td><strong>City Tax Lists Processed</strong></td>
   </tr>
   <tr>
     <td>🔑</td>
-    <td align="right"><strong>4094</strong></td>
+    <td align="right"><strong>4268</strong></td>
     <td><strong>Guest Access Codes Generated</strong></td>
   </tr>
   <tr>
     <td>📇</td>
-    <td align="right"><strong>93</strong></td>
+    <td align="right"><strong>98</strong></td>
     <td><strong>VCF Contact Files Created</strong></td>
   </tr>
   <tr>
@@ -84,10 +84,10 @@ to approximately:
 </table>
 <br>
 
-⏱️ &nbsp; **~271 &nbsp; Hours of Manual Work Saved**
+⏱️ &nbsp; **~282 &nbsp; Hours of Manual Work Saved**
 <br>
 
-<sub>Statistics tracked since: <strong>2026-03-03</strong> · Last updated: <strong>2026-09-01</strong></sub><br>
+<sub>Statistics tracked since: <strong>2026-03-03</strong> · Last updated: <strong>2026-09-06</strong></sub><br>
 <sub><strong>All statistics are derived from real execution logs, which are kept private and can be verified.</strong></sub>
 
 <!-- HC63_METRICS_END -->
