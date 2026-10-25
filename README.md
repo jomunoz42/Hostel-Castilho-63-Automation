@@ -58,12 +58,12 @@ to approximately:
 <table>
   <tr>
     <td>🥐</td>
-    <td align="right"><strong>161</strong></td>
+    <td align="right"><strong>165</strong></td>
     <td><strong>Breakfast Lists Generated</strong></td>
   </tr>
   <tr>
     <td>💶</td>
-    <td align="right"><strong>158</strong></td>
+    <td align="right"><strong>162</strong></td>
     <td><strong>City Tax Lists Processed</strong></td>
   </tr>
   <tr>
@@ -84,10 +84,10 @@ to approximately:
 </table>
 <br>
 
-⏱️ &nbsp; **~385 &nbsp; Hours of Manual Work Saved**
+⏱️ &nbsp; **~394 &nbsp; Hours of Manual Work Saved**
 <br>
 
-<sub>Statistics tracked since: <strong>2026-03-03</strong> · Last updated: <strong>2026-10-20</strong></sub><br>
+<sub>Statistics tracked since: <strong>2026-03-03</strong> · Last updated: <strong>2026-10-25</strong></sub><br>
 <sub><strong>All statistics are derived from real execution logs, which are kept private and can be verified.</strong></sub>
 
 <!-- HC63_METRICS_END -->
